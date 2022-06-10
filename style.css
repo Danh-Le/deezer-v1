@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px ;
+    border-bottom: 2px solid rgb(184, 183, 183) ;
+}
+.firstlink{
+    width: 100px;
+    background-color: #ffffff;
+    color: rgb(44, 135, 227);
+    border: 1px  solid #3a9ffe;
+    border-radius: 25px ;
+}
+.secondlink{
+    width: 100px;
+    background-color: #258ae9;
+    color: white;
+    border: 0px  solid #3a9ffe;
+    border-radius: 25px ;
+    margin-right: 30px;
+}
+.simplelink{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    word-spacing: 15px;
+    align-items: center;
+}
+
+/* body */
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+}
+main .mobility{
+    display: flex;
+    background-color: #ef5466 ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+/* Cover */
+.cover{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-left: 200px;
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    line-height: 200%;
+    padding-bottom: 50px;
+    gap: 15px;
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.cover p{
+    color: #ef5466;
+    font-size: 15px ;
+    font-weight: bold;
+    line-height: 140%;
+}
+.duobutton{
+    display: flex;
+    flex-direction: row;
+}
+.preniumbutton{
+    height: 30px;
+    background-color: #ef5466;
+    color: white;
+    border: 0px  solid #ef5466;
+    border-radius: 25px ;
+    margin-right: 30px;
+}
+.deezergratuit{
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px ;
+}
+/* Deezer, c'est quoi? */
+#kezako{
+    background-color: #f9f9f9 ;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+}
+.descript{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.descript article{
+    width: 50% ;
+}
+h7{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* Mobility */
+.mobility{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 70px;
+}
+.logomob{
+    width: 300px;
+    margin-top: 30px;
+    filter: invert(100%);
+}
+.always{
+    line-height: 200%;
+    font-size: 20px;
+}
+.devise{
+    width: 500px;
+    line-height: 130%;
+    color: white; 
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.recomand{
+    text-align: center;
+    font-size: 8px;
+    line-height: 200%;
+}
+.sales{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.propositions{
+    padding: 10px 10px;
+    box-shadow: 5px 5px #cbcbcb;
+    padding: 50px;
+    line-height: 200%;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200%;
+}
+.prenium{
+    padding: 50px;
+    background-color: #2d96c8 ;
+}
+.conditions{
+    text-align: center;
+    font-size: 10px;
+    line-height: 100%;
+    padding: 30px 20px 40px 20px;
+}
+/* subscription */
+.subscription{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.abo{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9 ;
+}
+.abobutton{
+    height: 30px;
+    color: white;
+    background-color: #5f5e5e;
+    border: 0px  solid #5b5b5b;
+    border-radius: 25px ;
+}
+.abobutton2{
+    height: 30px;
+    color: white;
+    background-color: #d37a7a;
+    border: 0px  solid #5b5b5b;
+    border-radius: 25px ;
+}
+h5{
+    font-size: 18px;
+    font-weight: bold; 
+}
+h5 span{
+    color: #ef5466;
+}
+.moreinfo{
+    align-items: flex-end;
+    text-align: center;
+    width: 100px;
+    background-color: #f9f9f9;
+    color: black;
+    border: 1px  solid black;
+    border-radius: 25px ;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 70px 70px;
+    gap: 30px;
+}
+.mentions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h6{
+    color: #555353;
+}
+.app{
+    text-align: center;
+}
+.alllink{
+    font-size: 11px;
+    color: white;
+    line-height: 250%;
+    text-decoration: none;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    filter: invert(100%);
+    justify-content: space-around;
+}
+h9{
+    color: #a8a6a6;
+}
