@@ -41,20 +41,17 @@ body{
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
 }
-main .mobility{
-    display: flex;
-    background-color: #ef5466 ;
-}
+/* Main */
 main{
     display: flex;
     flex-direction: column;
 }
-/* Cover */
+/* Main: Cover */
 .cover{
     display: flex;
     flex-direction: row;
-    gap: 100px;
     padding-left: 200px;
+    padding-right: 50px;
 }
 .select{
     display: flex;
@@ -94,7 +91,7 @@ h1{
     border: 1px solid black;
     border-radius: 25px ;
 }
-/* Deezer, c'est quoi? */
+/* Main: Deezer, c'est quoi? */
 #kezako{
     background-color: #f9f9f9 ;
     padding: 50px 100px 50px 100px;
@@ -118,20 +115,20 @@ h7{
     font-size: 15px;
     font-weight: bold;
 }
-/* Mobility */
+/* Main: Mobility */
 .mobility{
     display: flex;
     justify-content: space-around;
-    padding: 30px 70px;
+    padding: 30px 90px;
+    background-color: #ef5466 ;
 }
 .logomob{
-    width: 300px;
-    margin-top: 30px;
+    margin-top: 40px;
     filter: invert(100%);
 }
 .always{
     line-height: 200%;
-    font-size: 20px;
+    font-size: 25px;
 }
 .devise{
     width: 500px;
@@ -150,48 +147,27 @@ h7{
     font-size: 8px;
     line-height: 200%;
 }
+/* Main: sales */
 .sales{
     display: flex;
     justify-content: center;
     gap: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 .propositions{
-    padding: 10px 10px;
     box-shadow: 5px 5px #cbcbcb;
     padding: 50px;
     line-height: 200%;
+}
+.propositions p{
+    text-align: center;
 }
 h3{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     line-height: 200%;
-}
-.prenium{
-    padding: 50px;
-    background-color: #2d96c8 ;
-}
-.conditions{
-    text-align: center;
-    font-size: 10px;
-    line-height: 100%;
-    padding: 30px 20px 40px 20px;
-}
-/* subscription */
-.subscription{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-.abo{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9 ;
 }
 .abobutton{
     height: 30px;
@@ -207,6 +183,62 @@ h3{
     border: 0px  solid #5b5b5b;
     border-radius: 25px ;
 }
+.prenium{
+    padding: 50px;
+    background-color: #2d96c8 ;
+    line-height: 200%;
+    justify-content: center;
+    color: white;
+}
+.prenium ul li{
+    color: white;
+}
+.opacity{
+    filter: opacity(40%);
+}
+.prenium p{
+    text-align: center;
+    line-height: 200%;
+    padding-top: 8px;
+}
+.propositions article{
+    text-align: center;
+    padding-top: 20px;
+}
+.prenium article{
+    text-align: center;
+}
+.infos{
+    color: #3a9ffe;
+    text-decoration: none;
+}
+.conditions{
+    text-align: center;
+    font-size: 10px;
+    line-height: 100%;
+    padding: 30px 20px 40px 20px;
+}
+ul li {
+    color: rgb(107, 107, 107);
+  }
+ul li img{
+    filter: opacity(20%);
+}
+/* Main: subscription */
+.subscription{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9 ;
+}
+.abo{
+    display: flex;
+    padding: 30px 90px;
+    justify-content: space-between;
+
+}
+.moreinfo{
+    flex-direction: column;
+}
 h5{
     font-size: 18px;
     font-weight: bold; 
@@ -214,15 +246,13 @@ h5{
 h5 span{
     color: #ef5466;
 }
-.moreinfo{
-    align-items: flex-end;
-    text-align: center;
-    width: 100px;
-    background-color: #f9f9f9;
+.abo button{
+    width: 150px;
     color: black;
     border: 1px  solid black;
     border-radius: 25px ;
 }
+/* Footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -230,6 +260,10 @@ footer{
     padding: 70px 70px;
     gap: 30px;
 }
+.app{
+    text-align: center;
+}
+/* Footer: Mentions */
 .mentions{
     display: flex;
     flex-direction: row;
@@ -238,15 +272,17 @@ footer{
 h6{
     color: #555353;
 }
-.app{
-    text-align: center;
-}
+
 .alllink{
     font-size: 11px;
-    color: white;
     line-height: 250%;
+
+}
+.link a{
+    color: rgb(133, 131, 131);
     text-decoration: none;
 }
+/* Footer: End */
 .end{
     display: flex;
     justify-content: space-between;
@@ -258,3 +294,14 @@ h6{
 h9{
     color: #a8a6a6;
 }
+
+/* version mobile */
+@media (max-width: 768px) {
+    body{
+    display: flex;
+    flex-direction: column;  
+    }
+    main img{
+    mask-image: url(img/hero.png);
+    }
+  }
