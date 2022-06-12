@@ -49,7 +49,6 @@ main{
 /* Main: Cover */
 .cover{
     display: flex;
-    flex-direction: row;
     padding-left: 200px;
     padding-right: 50px;
 }
@@ -228,13 +227,13 @@ ul li img{
 .subscription{
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9 ;
+    gap: 15px;
 }
 .abo{
     display: flex;
     padding: 30px 90px;
     justify-content: space-between;
-
+    background-color: #f9f9f9 ;
 }
 .moreinfo{
     flex-direction: column;
@@ -294,3 +293,83 @@ h6{
 h9{
     color: #a8a6a6;
 }
+
+/* version mobile */
+@media (max-width: 768px) {
+    header{
+        justify-content: center;
+    }
+    nav{
+       display: none ;
+       src="img/menuburger.png" width="30" alt="Menu burger" />
+    }
+    .cover{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .select{
+        display: flex;
+        flex-direction: column ;
+        text-align: center;
+    }
+    .duobutton{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0% 20%;
+    }
+    #kezako img{
+        display: none;
+    }
+    #kezako{
+        padding: 50px 5px;
+        justify-content: center;
+    }
+    .descript article{
+        padding: 5px;
+        width: 100%;
+    }
+    .descript{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    h2{
+        text-align: center;
+    }
+    .mobility{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0px;
+    }
+    .logomob{
+        align-content: center;
+    }
+    .sales{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 60px;
+    }
+    .abo{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .abo p{
+        display: none;
+    }
+    .abo button{
+        text-align: center;
+    }
+    .mentions{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .end{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+  }
