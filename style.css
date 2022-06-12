@@ -294,14 +294,3 @@ h6{
 h9{
     color: #a8a6a6;
 }
-
-/* version mobile */
-@media (max-width: 768px) {
-    body{
-    display: flex;
-    flex-direction: column;  
-    }
-    main img{
-    mask-image: url(img/hero.png);
-    }
-  }
